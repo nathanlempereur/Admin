@@ -5,8 +5,9 @@ function checkAuthentication() {
     // Par exemple, si vous utilisez des cookies :
     const isAuthenticated = document.cookie.includes("authenticated=true");
 
-    // Si l'utilisateur est authentifié, vous le laissez sur la page Home
+    // Si l'utilisateur est authentifié, vous le redirigez vers la page Home
     if (isAuthenticated) {
+        window.location.href = "https://nathanlempereur.github.io/Admin/Home"; // Redirection vers la page Home
         return;
     }
 
