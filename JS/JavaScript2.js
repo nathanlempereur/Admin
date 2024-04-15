@@ -14,7 +14,7 @@ function validateForm() {
     // Vérification des identifiants
     if (credentials.hasOwnProperty(username) && credentials[username] === password) {
         // Redirection vers la page Home.html avec le paramètre fromLogin
-        window.location.href = "Home.html?fromLogin=true";
+        window.location.href = "https://nathanlempereur.github.io/Admin/Home?fromLogin=true";
         return false; // Empêche l'envoi du formulaire
     } else {
         // Affichage d'un message d'erreur en cas d'identifiants incorrects
