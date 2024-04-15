@@ -5,17 +5,19 @@ function checkAuthentication() {
     // Par exemple, si vous utilisez des cookies :
     const isAuthenticated = document.cookie.includes("authenticated=true");
 
-    // Si l'utilisateur n'est pas authentifié, redirigez-le vers la page de connexion
-    if (!isAuthenticated) {
+    // Si l'utilisateur est authentifié, vous le laissez sur la page Home
+    if (isAuthenticated) {
+        return;
+    }
+
+    // Si l'utilisateur n'est pas authentifié et que le paramètre "fromLogin" n'est pas présent dans l'URL, redirigez-le vers la page de connexion
+    if (!window.location.href.includes("fromLogin")) {
         window.location.href = "https://nathanlempereur.github.io/Admin/Login"; // Remplacez "Login.html" par le chemin de votre page de connexion
     }
 }
 
 // Appeler la fonction de vérification de l'authentification lors du chargement de la page
 window.onload = checkAuthentication;
-
-
-
 
 // Fonction pour mettre à jour l'heure
 function updateClock() {
@@ -35,4 +37,3 @@ function pad(number) {
 
 // Appel initial de la fonction pour démarrer l'horloge
 updateClock();
-
