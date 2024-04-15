@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        #haut {
+            background: linear-gradient(20deg, #00ffff, #FF02FF);
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+            border-bottom: 5px solid #000;
+            padding-bottom: 20px; /* Ajout de marge en bas pour séparer du formulaire */
+        }
+
+        #bienvenue {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        #bienvenue h1 {
+            margin-right: 30px;
+        }
+        
+        #textHaut{
+            font-family: Copperplate Gothic;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        #login{
+            display: flex;
+            border: 3px solid black;
+            padding: 20px; 
+            margin: auto;
+            width: 35%;
+            flex-direction: column;
+            background-color: #ECECEC;
+            border-radius: 30px;
+            margin-top: 50px; 
+            text-align: center;
+        }
+        
+        #cadrelogin{
+            border-bottom: 2px solid black;
+            margin-bottom: 20px; 
+        }
+        
+        #login input[type="text"],
+        #login input[type="password"] {
+            width: 80%; 
+            margin: 10px auto; 
+            padding: 8px;
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+        }
+        
+        #login input[type="submit"] {
+            width: 40%; 
+            margin: 10px auto; 
+            padding: 8px; 
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+        
+        #login input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="haut">
+        <header id="bienvenue">
+            <h1 id="textHaut"><u>Page Privée :</u>  Connexion</h1>
+        </header>
+    </div>
+    
+    <div id="login">
+        <header id="cadrelogin">
+            <h1> Connexion à Home : </h1>
+        </header>
+        
+        <form id="loginForm" method="post" onsubmit="return validateForm()">
+            <label for="username">Identifiant :</label>
+            <input type="text" id="username" name="username" placeholder="Entrez votre identifiant" required>
+            <br>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+            <br><br>
+            <input type="submit" value="Se connecter">
+            <br><br>
+			<p> Pas d'identifiants ? Contacter L'administrateur : </p> 
+			<a id="liencour2" href="https://www.instagram.com/nathan_lmpr" target="_blank"><span> Contact Administrateur.</span></a>
+        </form>
+    </div>
+
+	<script type="text/javascript" src="JS/JavaScript2.js"></script>
+</body>
+</html>
+
