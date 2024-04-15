@@ -1,19 +1,14 @@
-// Vérifie si l'utilisateur est connecté
+// Fonction pour vérifier l'état d'authentification de l'utilisateur
 function checkAuthentication() {
-    // Vérifie si un cookie ou une session indiquant la connexion de l'utilisateur est présent
-    // Ici, vous devrez utiliser la méthode appropriée pour vérifier l'état d'authentification de l'utilisateur
-    // Par exemple, si vous utilisez des cookies :
+    // Vérifier si un cookie ou une session indiquant la connexion de l'utilisateur est présent
     const isAuthenticated = document.cookie.includes("authenticated=true");
 
-    // Si l'utilisateur est authentifié, vous le redirigez vers la page Home
+    // Si l'utilisateur est authentifié, le rediriger vers la page Home
     if (isAuthenticated) {
-        window.location.href = "https://nathanlempereur.github.io/Admin/Home"; // Redirection vers la page Home
-        return;
-    }
-
-    // Si l'utilisateur n'est pas authentifié et que le paramètre "fromLogin" n'est pas présent dans l'URL, redirigez-le vers la page de connexion
-    if (!window.location.href.includes("fromLogin=true")) {
-        window.location.href = "https://nathanlempereur.github.io/Admin/Login"; // Remplacez "Login.html" par le chemin de votre page de connexion
+        window.location.href = "https://nathanlempereur.github.io/Admin/Home.html";
+    } else {
+        // Si l'utilisateur n'est pas authentifié, le rediriger vers la page de connexion
+        window.location.href = "https://nathanlempereur.github.io/Admin/Login.html";
     }
 }
 
