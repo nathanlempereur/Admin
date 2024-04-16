@@ -2,7 +2,6 @@
         var credentials = {
             "admin": "0000",
             "lucaster62": "123",
-            "user2": "password2"
             // Ajoutez d'autres identifiants et mots de passe au besoin
         };
 
