@@ -1,6 +1,6 @@
         // Définition des identifiants et mots de passe
         var credentials = {
-            "admin": "admin",
+            "admin": "C1secret!",
             "lucaster62": "123",
             "user2": "password2"
             // Ajoutez d'autres identifiants et mots de passe au besoin
