@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,16 +7,16 @@
     <title>Home Nathan</title>
     <style>
 		#corp{
-			background-color: #EA4A29;
+			background-color: #888888;
 		}
 	
 	
         #haut {
-            background: linear-gradient(20deg, #00ffff, #FF02FF);
+            background : black;
             display: flex;
             flex-direction: column;
             align-items: center;	
-			border-bottom: 5px solid #000
+			border-bottom: 5px solid white;
         }
 
 		#bienvenue {
@@ -31,6 +32,7 @@
 		
 		#textHaut{
 			font-family: Copperplate Gothic;
+			color : white;
 		}
 
 		@keyframes rainbowBorder {
@@ -72,7 +74,7 @@
 			position: relative;
 			font-size: 18px;
 			font-weight: 500;
-			color: #333;
+			color: white;
 			text-decoration: none;
 			padding: 10px 15px;
 			transition: 0.5s;
@@ -84,15 +86,19 @@
 			bottom: 0;
 			left: 0;
 			width: 100%;
-			height: 10px;
-			background-color: yellow; 
-			border-radius: 15px;
+			height: 5px;
+			background-color: white; 
+			border-radius: 50%;
 			transform: scale(0, 1); 
 			transition: transform 0.5s;
 		}
 
 		nav a:hover span {
 			transform: scale(1, 1); 
+		}
+		
+		#navigation{
+		border-top: 2px solid white;
 		}
 		
 		#cours {
@@ -105,11 +111,6 @@
 			background-color: #ECECEC;
 			border-radius: 30px;
 
-		}
-		
-		#introcours{
-			margin: auto;
-			
 		}
 		
 		#presentationcours{
@@ -141,6 +142,10 @@
 			font-size: 20px;
 		}
 		
+		#Gmail{
+			color: black;
+			font-size: 20px;
+		}
 		#tableau{
 			display: flex;
 			border: 3px solid #000;
@@ -213,14 +218,14 @@
 			<h1 id="textHaut"><u>Bonjour Nathan !</u></h1>
 		</header>
 		<br>
-		<div>
+		<div id="navigation">
 			<nav>
+			<br>
 				<a href="Login.html" >Déconnexion <span></span></a>
 				<a href="https://www.deezer.com/fr/" target="_blank">Deezer <span></span></a>
 				<a href="https://chat.openai.com" target="_blank">ChatGPT <span></span></a>
 				<a href="https://www.snapchat.com/fr-FR" target="_blank">Snapchat <span></span></a>
 				<a href="https://www.instagram.com" target="_blank">Instagram <span></span></a>
-				<a href="https://www.google.com/intl/fr/gmail/about/" target="_blank">Gmail <span></span></a>
 				<a href="https://www.google.com/intl/fr/drive/" target="_blank">Drive <span></span></a>
 				<a href="https://www.parcoursup.gouv.fr" target="_blank">Parcoursup <span></span></a>
 				<a href="https://0620256s.index-education.net/pronote/eleve.html?identifiant=TWcxkzf9GbkYYcpt" target="_blank">Pronote <span></span></a>
@@ -235,21 +240,31 @@
 	<br>
 	<div id="div-1">
     <div id="cours">
-	<div id="introcours">
 		<h4 id="presentationcours"><u> Cours d'NSI :</u></h4>
-	</div>
 		<label id="liencour"> Chapitre 1 : <a id="liencour2" href="COURS/chapitre-01-classes-et-programmation-objet.pdf" target="_blank">classes-et-programmation-objet<span></span></a></label>
+		<br>
 		<label id="liencour"> Chapitre 2 : <a id="liencour2" href="COURS/chapitre-02-structure-de-donnees-lineaires.pdf" target="_blank">structure-de-donnees-lineaires<span></span></a></label>
+		<br>
 		<label id="liencour"> Chapitre 3 : <a id="liencour2" href="COURS/chapitre-03-recursivite-diviser-pour-regner.pdf" target="_blank">recursivite-diviser-pour-regner<span></span></a></label>
+		<br>
 		<label id="liencour"> Chapitre 4 : <a id="liencour2" href="COURS/chapitre-04-soc.pdf" target="_blank">soc<span></span></a></label>
+		<br>
 		<label id="liencour"> Chapitre 5 : <a id="liencour2" href="COURS/chapitre-05-bdd-relationnelles.pdf" target="_blank">bdd-relationnelles<span></span></a></label>
+		<br>
 		<label id="liencour"> Chapitre 6 : <a id="liencour2" href="COURS/chapitre-06-structure-de-donnees-hierarchiques.pdf" target="_blank">structure-de-donnees-hierarchiques<span></span></a></label>
+		<br>
 		<label id="liencour"> Chapitre 7 : <a id="liencour2" href="COURS/chapitre-07-protocoles-de-routage.pdf" target="_blank">protocoles-de-routage<span></span></a></label>
+		<br>
 		<label id="liencour"> Chapitre 8 : <a id="liencour2" href="COURS/chapitre-08-systeme_exploitation.pdf" target="_blank">systeme-exploitation<span></span></a></label>
+		<br>
 		<label id="liencour"> Chapitre 9 : <a id="liencour2" href="COURS/chapitre-09-structure-de-donnees-relationnelles.pdf" target="_blank">structure-de-donnees-relationnelles<span></span></a></label>
+		<br>
 		<label id="liencour"> Chapitre 10: <a id="liencour2" href="COURS/chapitre-10-programmation-dynamique.pdf" target="_blank">programmation-dynamique<span></span></a></label>
+		<br>
 		<label id="liencour"> Chapitre 11: <a id="liencour2" href="COURS/chapitre-11-securisation-des-communications.pdf" target="_blank">securisation-des-communications<span></span></a></label>
+		<br>
 		<label id="liencour"> Chapitre 12: <a id="liencour2" href="COURS/chapitre-12-notion-de-programme-en-tant-que-donnee-calculabilite-decidabilite.pdf" target="_blank">notion-programme-comme-donnee-calculabilite-decidabilite<span></span></a></label>
+		<br>
 		<label id="liencour"> Chapitre 13: <a id="liencour2" href="COURS/chapitre-13-recherche-textuelle.pdf" target="_blank">recherche-textuelle<span></span></a></label>
 	</div>
 	
@@ -337,6 +352,9 @@
 	</div>
 	
 <div id="tableaumail">
+	<br>
+		<a id="Gmail" href="https://www.google.com/intl/fr/gmail/about/" target="_blank">Cliquez ici pour accéder à Gmail.. <span></span></a>
+	<br>
     <table id="TableMail" border="1"> 
         <tr>
             <th>Personnes</th>
@@ -365,7 +383,11 @@
         <tr>
             <td id="class">Marie Chebli</td>
             <td id="G1"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=chebligi@gmail.com" target="_blank">chebligi@gmail.com</a></td>
-        </tr>              
+        </tr>
+        <tr>
+            <td id="class">Neve Sarah</td>
+            <td id="G1"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=sarahneve315@gmail.com" target="_blank">sarahneve315@gmail.com</a></td>
+        </tr>		
     </table>
 		</div>
 	</div>
